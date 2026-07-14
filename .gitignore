@@ -1,0 +1,6 @@
+*.pem
+*.env
+.env
+global-bundle.pem
+__pycache__/
+.DS_Store
