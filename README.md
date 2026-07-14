@@ -47,7 +47,7 @@ These steps assume the AWS infrastructure (VPC, subnets, security groups, RDS in
 
 ```bash
 # 1. Clone the repository
-git clone <repository-url>
+git clone https://github.com/RealKingHubs/aws-rds-private-data-warehouse.git
 cd project-3-data-warehouse
 
 # 2. SSH into the bastion host
