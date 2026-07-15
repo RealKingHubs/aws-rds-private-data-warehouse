@@ -27,7 +27,7 @@ The database is not reachable from the internet under any circumstance. Every pa
      10.0.3.0/24                           10.0.4.0/24
      RDS Instance (primary)                (reserved for Multi-AZ)
 ```
-
+![Network architecture](screenshots/network-diagram.png)
 Only the bastion host has a public IP. The RDS instance has none.
 
 ## VPC

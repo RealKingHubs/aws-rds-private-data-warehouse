@@ -14,20 +14,8 @@ A private, network-isolated MySQL database on AWS RDS, provisioned inside a cust
 
 ## Architecture
 
-```
-Internet
-   |
-   v
-[Internet Gateway]
-   |
-   v
-[Public Subnet] --- Bastion Host (EC2)
-   |
-   | (internal VPC traffic, port 3306)
-   v
-[Private Subnet] --- RDS Instance (MySQL 8.4.9)
-```
-
+![Network architecture](docs/screenshots/network-diagram.png)
+---
 The RDS instance has no public IP and cannot be reached directly. All access goes through the bastion host, which is the only resource exposed to the internet (restricted to SSH on port 22 from an authorized IP).
 
 ## Prerequisites
